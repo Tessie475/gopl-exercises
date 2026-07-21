@@ -10,7 +10,6 @@ package genconv
 
 import (
 	"fmt"
-	"math"
 )
 
 // One named type per unit. They all share float64 underneath, but Go treats
@@ -51,33 +50,33 @@ const (
 // caveat noted in the review: fractional results such as 0.3048 m display
 // as "0 m".
 func (m Meters) String() string {
-	return fmt.Sprintf("%g m", math.Round(float64(m)))
+	return fmt.Sprintf("%g m", float64(m))
 }
 
 func (f Feet) String() string {
-	return fmt.Sprintf("%g Ft", math.Round(float64(f)))
+	return fmt.Sprintf("%g Ft", float64(f))
 }
 
 func (p Pound) String() string {
-	return fmt.Sprintf("%g Pound", math.Round(float64(p)))
+	return fmt.Sprintf("%g Pound", float64(p))
 }
 
 func (k Kilogram) String() string {
-	return fmt.Sprintf("%g Kg", math.Round(float64(k)))
+	return fmt.Sprintf("%g Kg", float64(k))
 }
 
 func (g Grams) String() string {
-	return fmt.Sprintf("%g g", math.Round(float64(g)))
+	return fmt.Sprintf("%g g", float64(g))
 }
 
 func (c Celsius) String() string {
-	return fmt.Sprintf("%g°C", math.Round(float64(c)))
+	return fmt.Sprintf("%g°C", float64(c))
 }
 
 func (f Fahrenheit) String() string {
-	return fmt.Sprintf("%g°F", math.Round(float64(f)))
+	return fmt.Sprintf("%g°F", float64(f))
 }
 
 func (k Kelvin) String() string {
-	return fmt.Sprintf("%g K", math.Round(float64(k)))
+	return fmt.Sprintf("%g K", float64(k))
 }
