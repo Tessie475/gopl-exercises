@@ -1,3 +1,4 @@
+// checks whether two strings are anagrams
 package main
 
 import (
