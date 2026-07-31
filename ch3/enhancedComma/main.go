@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// comma inserts commas into a non-negative decimal integer string.
+// enhanced comma inserts commas into a string of numbers
 func comma(s string) string {
 
 	//handling numbers with + or -

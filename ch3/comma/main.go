@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// comma inserts commas into a non-negative decimal integer string.
+// comma inserts commas into a non-negative string of digits.
 func comma(s string) string {
 	var buf bytes.Buffer
 	for i := 0; i < len(s); i++ {
