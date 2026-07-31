@@ -5,6 +5,19 @@
 *.so
 *.dylib
 
+# `go build` inside an exercise directory drops a binary named after that
+# folder, with no extension to match on. Rather than guess at names, ignore
+# everything by default and allow back the file types this repo actually
+# tracks. Add a new "!*.ext" line if you start committing another kind.
+*
+!*/
+!*.go
+!*.md
+!*.txt
+!go.mod
+!go.sum
+!.gitignore
+
 # Test binary and coverage
 *.test
 *.out
