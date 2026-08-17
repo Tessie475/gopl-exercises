@@ -1,9 +1,3 @@
-// Exercise 4.8: modify charcount to count letters, digits, and so on in their
-// Unicode categories, using functions like unicode.IsLetter.
-//
-// It reads UTF-8 text from standard input one rune at a time and tallies each
-// valid rune into a Unicode category (letter, digit, space, ...), then prints
-// the totals.
 package main
 
 import (
